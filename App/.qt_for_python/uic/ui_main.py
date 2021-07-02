@@ -18,7 +18,7 @@ class Ui_MainWindow(object):
         if not MainWindow.objectName():
             MainWindow.setObjectName(u"MainWindow")
         MainWindow.setEnabled(True)
-        MainWindow.resize(500, 461)
+        MainWindow.resize(500, 450)
         MainWindow.setMaximumSize(QSize(16777215, 16777215))
         self.centralwidget = QWidget(MainWindow)
         self.centralwidget.setObjectName(u"centralwidget")
@@ -174,16 +174,16 @@ class Ui_MainWindow(object):
         self.frame.setFrameShadow(QFrame.Raised)
         self.verticalLayout_7 = QVBoxLayout(self.frame)
         self.verticalLayout_7.setObjectName(u"verticalLayout_7")
-        self.frame_2 = QFrame(self.frame)
-        self.frame_2.setObjectName(u"frame_2")
-        self.frame_2.setAutoFillBackground(False)
-        self.frame_2.setStyleSheet(u"background-color: rgba(255, 225, 255, 10);")
-        self.frame_2.setFrameShape(QFrame.StyledPanel)
-        self.frame_2.setFrameShadow(QFrame.Raised)
-        self.horizontalLayout_2 = QHBoxLayout(self.frame_2)
+        self.frame_CN1 = QFrame(self.frame)
+        self.frame_CN1.setObjectName(u"frame_CN1")
+        self.frame_CN1.setAutoFillBackground(False)
+        self.frame_CN1.setStyleSheet(u"background-color: rgba(255, 225, 255, 10);")
+        self.frame_CN1.setFrameShape(QFrame.StyledPanel)
+        self.frame_CN1.setFrameShadow(QFrame.Raised)
+        self.horizontalLayout_2 = QHBoxLayout(self.frame_CN1)
         self.horizontalLayout_2.setObjectName(u"horizontalLayout_2")
-        self.horizontalLayout_2.setContentsMargins(20, -1, 20, -1)
-        self.frame_3 = QFrame(self.frame_2)
+        self.horizontalLayout_2.setContentsMargins(20, 0, 20, 10)
+        self.frame_3 = QFrame(self.frame_CN1)
         self.frame_3.setObjectName(u"frame_3")
         self.frame_3.setStyleSheet(u"background-color: none")
         self.frame_3.setFrameShape(QFrame.StyledPanel)
@@ -208,30 +208,27 @@ class Ui_MainWindow(object):
 
         self.verticalLayout_3.addWidget(self.label_title_2)
 
-        self.note1 = QLabel(self.frame_3)
+        self.note1 = QLineEdit(self.frame_3)
         self.note1.setObjectName(u"note1")
-        self.note1.setMinimumSize(QSize(0, 0))
-        self.note1.setFont(font3)
-        self.note1.setStyleSheet(u"QLabel{\n"
+        font4 = QFont()
+        font4.setFamily(u"Verdana")
+        font4.setPointSize(14)
+        self.note1.setFont(font4)
+        self.note1.setAutoFillBackground(False)
+        self.note1.setStyleSheet(u"QLineEdit{\n"
 "color: rgb(8, 255, 206);\n"
-"background-color: none;\n"
+"background-color: rgba(255, 255, 255, 0);\n"
 "}\n"
-"QLabel:hover{\n"
+"QLineEdit:hover{\n"
 "color: rgba(8, 255, 206,150);\n"
-"}\n"
-"\n"
-"\n"
-"")
-        self.note1.setScaledContents(False)
-        self.note1.setAlignment(Qt.AlignLeading|Qt.AlignLeft|Qt.AlignVCenter)
-        self.note1.setTextInteractionFlags(Qt.LinksAccessibleByMouse|Qt.TextEditable|Qt.TextSelectableByMouse)
+"}")
 
         self.verticalLayout_3.addWidget(self.note1)
 
 
         self.horizontalLayout_2.addWidget(self.frame_3)
 
-        self.relay1 = QCheckBox(self.frame_2)
+        self.relay1 = QCheckBox(self.frame_CN1)
         self.relay1.setObjectName(u"relay1")
         self.relay1.setMaximumSize(QSize(120, 50))
         self.relay1.setLayoutDirection(Qt.RightToLeft)
@@ -253,18 +250,18 @@ class Ui_MainWindow(object):
         self.horizontalLayout_2.addWidget(self.relay1)
 
 
-        self.verticalLayout_7.addWidget(self.frame_2)
+        self.verticalLayout_7.addWidget(self.frame_CN1)
 
-        self.frame_4 = QFrame(self.frame)
-        self.frame_4.setObjectName(u"frame_4")
-        self.frame_4.setAutoFillBackground(False)
-        self.frame_4.setStyleSheet(u"background-color: rgba(255, 225, 255, 10);")
-        self.frame_4.setFrameShape(QFrame.StyledPanel)
-        self.frame_4.setFrameShadow(QFrame.Raised)
-        self.horizontalLayout_10 = QHBoxLayout(self.frame_4)
+        self.frame_CN2 = QFrame(self.frame)
+        self.frame_CN2.setObjectName(u"frame_CN2")
+        self.frame_CN2.setAutoFillBackground(False)
+        self.frame_CN2.setStyleSheet(u"background-color: rgba(255, 225, 255, 10);")
+        self.frame_CN2.setFrameShape(QFrame.StyledPanel)
+        self.frame_CN2.setFrameShadow(QFrame.Raised)
+        self.horizontalLayout_10 = QHBoxLayout(self.frame_CN2)
         self.horizontalLayout_10.setObjectName(u"horizontalLayout_10")
-        self.horizontalLayout_10.setContentsMargins(20, -1, 20, -1)
-        self.frame_5 = QFrame(self.frame_4)
+        self.horizontalLayout_10.setContentsMargins(20, 0, 20, 10)
+        self.frame_5 = QFrame(self.frame_CN2)
         self.frame_5.setObjectName(u"frame_5")
         self.frame_5.setStyleSheet(u"background-color: none")
         self.frame_5.setFrameShape(QFrame.StyledPanel)
@@ -285,30 +282,24 @@ class Ui_MainWindow(object):
 
         self.verticalLayout_4.addWidget(self.label_title_10)
 
-        self.note2 = QLabel(self.frame_5)
+        self.note2 = QLineEdit(self.frame_5)
         self.note2.setObjectName(u"note2")
-        self.note2.setMinimumSize(QSize(0, 0))
-        self.note2.setFont(font3)
-        self.note2.setStyleSheet(u"QLabel{\n"
+        self.note2.setFont(font4)
+        self.note2.setAutoFillBackground(False)
+        self.note2.setStyleSheet(u"QLineEdit{\n"
 "color: rgb(8, 255, 206);\n"
-"background-color: none;\n"
+"background-color: rgba(255, 255, 255, 0);\n"
 "}\n"
-"QLabel:hover{\n"
+"QLineEdit:hover{\n"
 "color: rgba(8, 255, 206,150);\n"
-"}\n"
-"\n"
-"\n"
-"")
-        self.note2.setScaledContents(False)
-        self.note2.setAlignment(Qt.AlignLeading|Qt.AlignLeft|Qt.AlignVCenter)
-        self.note2.setTextInteractionFlags(Qt.LinksAccessibleByMouse|Qt.TextEditable|Qt.TextSelectableByMouse)
+"}")
 
         self.verticalLayout_4.addWidget(self.note2)
 
 
         self.horizontalLayout_10.addWidget(self.frame_5)
 
-        self.relay2 = QCheckBox(self.frame_4)
+        self.relay2 = QCheckBox(self.frame_CN2)
         self.relay2.setObjectName(u"relay2")
         self.relay2.setMaximumSize(QSize(120, 50))
         self.relay2.setLayoutDirection(Qt.RightToLeft)
@@ -330,18 +321,18 @@ class Ui_MainWindow(object):
         self.horizontalLayout_10.addWidget(self.relay2)
 
 
-        self.verticalLayout_7.addWidget(self.frame_4)
+        self.verticalLayout_7.addWidget(self.frame_CN2)
 
-        self.frame_8 = QFrame(self.frame)
-        self.frame_8.setObjectName(u"frame_8")
-        self.frame_8.setAutoFillBackground(False)
-        self.frame_8.setStyleSheet(u"background-color: rgba(255, 225, 255, 10);")
-        self.frame_8.setFrameShape(QFrame.StyledPanel)
-        self.frame_8.setFrameShadow(QFrame.Raised)
-        self.horizontalLayout_12 = QHBoxLayout(self.frame_8)
+        self.frame_CN3 = QFrame(self.frame)
+        self.frame_CN3.setObjectName(u"frame_CN3")
+        self.frame_CN3.setAutoFillBackground(False)
+        self.frame_CN3.setStyleSheet(u"background-color: rgba(255, 225, 255, 10);")
+        self.frame_CN3.setFrameShape(QFrame.StyledPanel)
+        self.frame_CN3.setFrameShadow(QFrame.Raised)
+        self.horizontalLayout_12 = QHBoxLayout(self.frame_CN3)
         self.horizontalLayout_12.setObjectName(u"horizontalLayout_12")
-        self.horizontalLayout_12.setContentsMargins(20, -1, 20, -1)
-        self.frame_9 = QFrame(self.frame_8)
+        self.horizontalLayout_12.setContentsMargins(20, 0, 20, 10)
+        self.frame_9 = QFrame(self.frame_CN3)
         self.frame_9.setObjectName(u"frame_9")
         self.frame_9.setStyleSheet(u"background-color: none")
         self.frame_9.setFrameShape(QFrame.StyledPanel)
@@ -362,30 +353,24 @@ class Ui_MainWindow(object):
 
         self.verticalLayout_6.addWidget(self.label_title_14)
 
-        self.note4 = QLabel(self.frame_9)
-        self.note4.setObjectName(u"note4")
-        self.note4.setMinimumSize(QSize(0, 0))
-        self.note4.setFont(font3)
-        self.note4.setStyleSheet(u"QLabel{\n"
+        self.note3 = QLineEdit(self.frame_9)
+        self.note3.setObjectName(u"note3")
+        self.note3.setFont(font4)
+        self.note3.setAutoFillBackground(False)
+        self.note3.setStyleSheet(u"QLineEdit{\n"
 "color: rgb(8, 255, 206);\n"
-"background-color: none;\n"
+"background-color: rgba(255, 255, 255, 0);\n"
 "}\n"
-"QLabel:hover{\n"
+"QLineEdit:hover{\n"
 "color: rgba(8, 255, 206,150);\n"
-"}\n"
-"\n"
-"\n"
-"")
-        self.note4.setScaledContents(False)
-        self.note4.setAlignment(Qt.AlignLeading|Qt.AlignLeft|Qt.AlignVCenter)
-        self.note4.setTextInteractionFlags(Qt.LinksAccessibleByMouse|Qt.TextEditable|Qt.TextSelectableByMouse)
+"}")
 
-        self.verticalLayout_6.addWidget(self.note4)
+        self.verticalLayout_6.addWidget(self.note3)
 
 
         self.horizontalLayout_12.addWidget(self.frame_9)
 
-        self.relay3 = QCheckBox(self.frame_8)
+        self.relay3 = QCheckBox(self.frame_CN3)
         self.relay3.setObjectName(u"relay3")
         self.relay3.setMaximumSize(QSize(120, 50))
         self.relay3.setLayoutDirection(Qt.RightToLeft)
@@ -407,18 +392,18 @@ class Ui_MainWindow(object):
         self.horizontalLayout_12.addWidget(self.relay3)
 
 
-        self.verticalLayout_7.addWidget(self.frame_8)
+        self.verticalLayout_7.addWidget(self.frame_CN3)
 
-        self.frame_6 = QFrame(self.frame)
-        self.frame_6.setObjectName(u"frame_6")
-        self.frame_6.setAutoFillBackground(False)
-        self.frame_6.setStyleSheet(u"background-color: rgba(255, 225, 255, 10);")
-        self.frame_6.setFrameShape(QFrame.StyledPanel)
-        self.frame_6.setFrameShadow(QFrame.Raised)
-        self.horizontalLayout_11 = QHBoxLayout(self.frame_6)
+        self.frame_CN4 = QFrame(self.frame)
+        self.frame_CN4.setObjectName(u"frame_CN4")
+        self.frame_CN4.setAutoFillBackground(False)
+        self.frame_CN4.setStyleSheet(u"background-color: rgba(255, 225, 255, 10);")
+        self.frame_CN4.setFrameShape(QFrame.StyledPanel)
+        self.frame_CN4.setFrameShadow(QFrame.Raised)
+        self.horizontalLayout_11 = QHBoxLayout(self.frame_CN4)
         self.horizontalLayout_11.setObjectName(u"horizontalLayout_11")
-        self.horizontalLayout_11.setContentsMargins(20, -1, 20, -1)
-        self.frame_7 = QFrame(self.frame_6)
+        self.horizontalLayout_11.setContentsMargins(20, 0, 20, 10)
+        self.frame_7 = QFrame(self.frame_CN4)
         self.frame_7.setObjectName(u"frame_7")
         self.frame_7.setStyleSheet(u"background-color: none")
         self.frame_7.setFrameShape(QFrame.StyledPanel)
@@ -439,30 +424,24 @@ class Ui_MainWindow(object):
 
         self.verticalLayout_5.addWidget(self.label_title_12)
 
-        self.label_title_13 = QLabel(self.frame_7)
-        self.label_title_13.setObjectName(u"label_title_13")
-        self.label_title_13.setMinimumSize(QSize(0, 0))
-        self.label_title_13.setFont(font3)
-        self.label_title_13.setStyleSheet(u"QLabel{\n"
+        self.note4 = QLineEdit(self.frame_7)
+        self.note4.setObjectName(u"note4")
+        self.note4.setFont(font4)
+        self.note4.setAutoFillBackground(False)
+        self.note4.setStyleSheet(u"QLineEdit{\n"
 "color: rgb(8, 255, 206);\n"
-"background-color: none;\n"
+"background-color: rgba(255, 255, 255, 0);\n"
 "}\n"
-"QLabel:hover{\n"
+"QLineEdit:hover{\n"
 "color: rgba(8, 255, 206,150);\n"
-"}\n"
-"\n"
-"\n"
-"")
-        self.label_title_13.setScaledContents(False)
-        self.label_title_13.setAlignment(Qt.AlignLeading|Qt.AlignLeft|Qt.AlignVCenter)
-        self.label_title_13.setTextInteractionFlags(Qt.LinksAccessibleByMouse|Qt.TextEditable|Qt.TextSelectableByMouse)
+"}")
 
-        self.verticalLayout_5.addWidget(self.label_title_13)
+        self.verticalLayout_5.addWidget(self.note4)
 
 
         self.horizontalLayout_11.addWidget(self.frame_7)
 
-        self.relay4 = QCheckBox(self.frame_6)
+        self.relay4 = QCheckBox(self.frame_CN4)
         self.relay4.setObjectName(u"relay4")
         self.relay4.setMaximumSize(QSize(120, 50))
         self.relay4.setLayoutDirection(Qt.RightToLeft)
@@ -484,34 +463,34 @@ class Ui_MainWindow(object):
         self.horizontalLayout_11.addWidget(self.relay4)
 
 
-        self.verticalLayout_7.addWidget(self.frame_6)
+        self.verticalLayout_7.addWidget(self.frame_CN4)
 
-        self.frame_10 = QFrame(self.frame)
-        self.frame_10.setObjectName(u"frame_10")
-        self.frame_10.setMaximumSize(QSize(16777215, 20))
-        self.frame_10.setFrameShape(QFrame.StyledPanel)
-        self.frame_10.setFrameShadow(QFrame.Raised)
-        self.horizontalLayout_3 = QHBoxLayout(self.frame_10)
+        self.frame_credit = QFrame(self.frame)
+        self.frame_credit.setObjectName(u"frame_credit")
+        self.frame_credit.setMaximumSize(QSize(16777215, 20))
+        self.frame_credit.setFrameShape(QFrame.StyledPanel)
+        self.frame_credit.setFrameShadow(QFrame.Raised)
+        self.horizontalLayout_3 = QHBoxLayout(self.frame_credit)
         self.horizontalLayout_3.setSpacing(0)
         self.horizontalLayout_3.setObjectName(u"horizontalLayout_3")
         self.horizontalLayout_3.setContentsMargins(0, 0, 0, 0)
-        self.label_credit = QLabel(self.frame_10)
+        self.label_credit = QLabel(self.frame_credit)
         self.label_credit.setObjectName(u"label_credit")
         self.label_credit.setMinimumSize(QSize(0, 0))
-        font4 = QFont()
-        font4.setFamily(u"Tahoma")
-        font4.setPointSize(9)
-        font4.setBold(False)
-        font4.setItalic(True)
-        self.label_credit.setFont(font4)
-        self.label_credit.setStyleSheet(u"")
+        font5 = QFont()
+        font5.setFamily(u"Tahoma")
+        font5.setPointSize(9)
+        font5.setBold(False)
+        font5.setItalic(True)
+        self.label_credit.setFont(font5)
+        self.label_credit.setStyleSheet(u"color: rgba(7, 0, 86, 120);")
         self.label_credit.setAlignment(Qt.AlignRight|Qt.AlignTrailing|Qt.AlignVCenter)
         self.label_credit.setMargin(5)
 
         self.horizontalLayout_3.addWidget(self.label_credit)
 
 
-        self.verticalLayout_7.addWidget(self.frame_10)
+        self.verticalLayout_7.addWidget(self.frame_credit)
 
 
         self.verticalLayout.addWidget(self.frame)
@@ -543,17 +522,21 @@ class Ui_MainWindow(object):
 #endif // QT_CONFIG(tooltip)
         self.closeAppBtn.setText("")
         self.label_title_2.setText(QCoreApplication.translate("MainWindow", u"Channel 1:", None))
-        self.note1.setText(QCoreApplication.translate("MainWindow", u"Note:", None))
+        self.note1.setInputMask("")
+        self.note1.setText(QCoreApplication.translate("MainWindow", u"Note 1:", None))
         self.relay1.setText("")
-        self.label_title_10.setText(QCoreApplication.translate("MainWindow", u"Channel 1:", None))
-        self.note2.setText(QCoreApplication.translate("MainWindow", u"Note:", None))
+        self.label_title_10.setText(QCoreApplication.translate("MainWindow", u"Channel 2:", None))
+        self.note2.setInputMask("")
+        self.note2.setText(QCoreApplication.translate("MainWindow", u"Note 2:", None))
         self.relay2.setText("")
-        self.label_title_14.setText(QCoreApplication.translate("MainWindow", u"Channel 1:", None))
-        self.note4.setText(QCoreApplication.translate("MainWindow", u"Note:", None))
+        self.label_title_14.setText(QCoreApplication.translate("MainWindow", u"Channel 3:", None))
+        self.note3.setInputMask("")
+        self.note3.setText(QCoreApplication.translate("MainWindow", u"Note 3:", None))
         self.relay3.setText("")
-        self.label_title_12.setText(QCoreApplication.translate("MainWindow", u"Channel 1:", None))
-        self.label_title_13.setText(QCoreApplication.translate("MainWindow", u"Note:", None))
+        self.label_title_12.setText(QCoreApplication.translate("MainWindow", u"Channel 4:", None))
+        self.note4.setInputMask("")
+        self.note4.setText(QCoreApplication.translate("MainWindow", u"Note 4:", None))
         self.relay4.setText("")
-        self.label_credit.setText(QCoreApplication.translate("MainWindow", u"#tht5hc  ", None))
+        self.label_credit.setText(QCoreApplication.translate("MainWindow", u"#v21.01  #tht5hc  ", None))
     # retranslateUi
 

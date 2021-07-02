@@ -10,7 +10,7 @@
     <x>0</x>
     <y>0</y>
     <width>500</width>
-    <height>461</height>
+    <height>450</height>
    </rect>
   </property>
   <property name="maximumSize">
@@ -386,7 +386,7 @@ color: rgba(8, 255, 206,150);
          </property>
          <layout class="QVBoxLayout" name="verticalLayout_7">
           <item>
-           <widget class="QFrame" name="frame_2">
+           <widget class="QFrame" name="frame_CN1">
             <property name="autoFillBackground">
              <bool>false</bool>
             </property>
@@ -403,8 +403,14 @@ color: rgba(8, 255, 206,150);
              <property name="leftMargin">
               <number>20</number>
              </property>
+             <property name="topMargin">
+              <number>0</number>
+             </property>
              <property name="rightMargin">
               <number>20</number>
+             </property>
+             <property name="bottomMargin">
+              <number>10</number>
              </property>
              <item>
               <widget class="QFrame" name="frame_3">
@@ -463,43 +469,30 @@ background-color: none;
                  </widget>
                 </item>
                 <item>
-                 <widget class="QLabel" name="note1">
-                  <property name="minimumSize">
-                   <size>
-                    <width>0</width>
-                    <height>0</height>
-                   </size>
-                  </property>
+                 <widget class="QLineEdit" name="note1">
                   <property name="font">
                    <font>
                     <family>Verdana</family>
                     <pointsize>14</pointsize>
-                    <bold>false</bold>
                    </font>
                   </property>
-                  <property name="styleSheet">
-                   <string notr="true">QLabel{
-color: rgb(8, 255, 206);
-background-color: none;
-}
-QLabel:hover{
-color: rgba(8, 255, 206,150);
-}
-
-
-</string>
-                  </property>
-                  <property name="text">
-                   <string>Note:</string>
-                  </property>
-                  <property name="scaledContents">
+                  <property name="autoFillBackground">
                    <bool>false</bool>
                   </property>
-                  <property name="alignment">
-                   <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+                  <property name="styleSheet">
+                   <string notr="true">QLineEdit{
+color: rgb(8, 255, 206);
+background-color: rgba(255, 255, 255, 0);
+}
+QLineEdit:hover{
+color: rgba(8, 255, 206,150);
+}</string>
                   </property>
-                  <property name="textInteractionFlags">
-                   <set>Qt::LinksAccessibleByMouse|Qt::TextEditable|Qt::TextSelectableByMouse</set>
+                  <property name="inputMask">
+                   <string/>
+                  </property>
+                  <property name="text">
+                   <string>Note 1:</string>
                   </property>
                  </widget>
                 </item>
@@ -542,7 +535,7 @@ QCheckBox::indicator:unchecked{
            </widget>
           </item>
           <item>
-           <widget class="QFrame" name="frame_4">
+           <widget class="QFrame" name="frame_CN2">
             <property name="autoFillBackground">
              <bool>false</bool>
             </property>
@@ -559,8 +552,14 @@ QCheckBox::indicator:unchecked{
              <property name="leftMargin">
               <number>20</number>
              </property>
+             <property name="topMargin">
+              <number>0</number>
+             </property>
              <property name="rightMargin">
               <number>20</number>
+             </property>
+             <property name="bottomMargin">
+              <number>10</number>
              </property>
              <item>
               <widget class="QFrame" name="frame_5">
@@ -611,7 +610,7 @@ background-color: none;
 }</string>
                   </property>
                   <property name="text">
-                   <string>Channel 1:</string>
+                   <string>Channel 2:</string>
                   </property>
                   <property name="alignment">
                    <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
@@ -619,43 +618,30 @@ background-color: none;
                  </widget>
                 </item>
                 <item>
-                 <widget class="QLabel" name="note2">
-                  <property name="minimumSize">
-                   <size>
-                    <width>0</width>
-                    <height>0</height>
-                   </size>
-                  </property>
+                 <widget class="QLineEdit" name="note2">
                   <property name="font">
                    <font>
                     <family>Verdana</family>
                     <pointsize>14</pointsize>
-                    <bold>false</bold>
                    </font>
                   </property>
-                  <property name="styleSheet">
-                   <string notr="true">QLabel{
-color: rgb(8, 255, 206);
-background-color: none;
-}
-QLabel:hover{
-color: rgba(8, 255, 206,150);
-}
-
-
-</string>
-                  </property>
-                  <property name="text">
-                   <string>Note:</string>
-                  </property>
-                  <property name="scaledContents">
+                  <property name="autoFillBackground">
                    <bool>false</bool>
                   </property>
-                  <property name="alignment">
-                   <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+                  <property name="styleSheet">
+                   <string notr="true">QLineEdit{
+color: rgb(8, 255, 206);
+background-color: rgba(255, 255, 255, 0);
+}
+QLineEdit:hover{
+color: rgba(8, 255, 206,150);
+}</string>
                   </property>
-                  <property name="textInteractionFlags">
-                   <set>Qt::LinksAccessibleByMouse|Qt::TextEditable|Qt::TextSelectableByMouse</set>
+                  <property name="inputMask">
+                   <string/>
+                  </property>
+                  <property name="text">
+                   <string>Note 2:</string>
                   </property>
                  </widget>
                 </item>
@@ -698,7 +684,7 @@ QCheckBox::indicator:unchecked{
            </widget>
           </item>
           <item>
-           <widget class="QFrame" name="frame_8">
+           <widget class="QFrame" name="frame_CN3">
             <property name="autoFillBackground">
              <bool>false</bool>
             </property>
@@ -715,8 +701,14 @@ QCheckBox::indicator:unchecked{
              <property name="leftMargin">
               <number>20</number>
              </property>
+             <property name="topMargin">
+              <number>0</number>
+             </property>
              <property name="rightMargin">
               <number>20</number>
+             </property>
+             <property name="bottomMargin">
+              <number>10</number>
              </property>
              <item>
               <widget class="QFrame" name="frame_9">
@@ -767,7 +759,7 @@ background-color: none;
 }</string>
                   </property>
                   <property name="text">
-                   <string>Channel 1:</string>
+                   <string>Channel 3:</string>
                   </property>
                   <property name="alignment">
                    <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
@@ -775,43 +767,30 @@ background-color: none;
                  </widget>
                 </item>
                 <item>
-                 <widget class="QLabel" name="note4">
-                  <property name="minimumSize">
-                   <size>
-                    <width>0</width>
-                    <height>0</height>
-                   </size>
-                  </property>
+                 <widget class="QLineEdit" name="note3">
                   <property name="font">
                    <font>
                     <family>Verdana</family>
                     <pointsize>14</pointsize>
-                    <bold>false</bold>
                    </font>
                   </property>
-                  <property name="styleSheet">
-                   <string notr="true">QLabel{
-color: rgb(8, 255, 206);
-background-color: none;
-}
-QLabel:hover{
-color: rgba(8, 255, 206,150);
-}
-
-
-</string>
-                  </property>
-                  <property name="text">
-                   <string>Note:</string>
-                  </property>
-                  <property name="scaledContents">
+                  <property name="autoFillBackground">
                    <bool>false</bool>
                   </property>
-                  <property name="alignment">
-                   <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+                  <property name="styleSheet">
+                   <string notr="true">QLineEdit{
+color: rgb(8, 255, 206);
+background-color: rgba(255, 255, 255, 0);
+}
+QLineEdit:hover{
+color: rgba(8, 255, 206,150);
+}</string>
                   </property>
-                  <property name="textInteractionFlags">
-                   <set>Qt::LinksAccessibleByMouse|Qt::TextEditable|Qt::TextSelectableByMouse</set>
+                  <property name="inputMask">
+                   <string/>
+                  </property>
+                  <property name="text">
+                   <string>Note 3:</string>
                   </property>
                  </widget>
                 </item>
@@ -854,7 +833,7 @@ QCheckBox::indicator:unchecked{
            </widget>
           </item>
           <item>
-           <widget class="QFrame" name="frame_6">
+           <widget class="QFrame" name="frame_CN4">
             <property name="autoFillBackground">
              <bool>false</bool>
             </property>
@@ -871,8 +850,14 @@ QCheckBox::indicator:unchecked{
              <property name="leftMargin">
               <number>20</number>
              </property>
+             <property name="topMargin">
+              <number>0</number>
+             </property>
              <property name="rightMargin">
               <number>20</number>
+             </property>
+             <property name="bottomMargin">
+              <number>10</number>
              </property>
              <item>
               <widget class="QFrame" name="frame_7">
@@ -923,7 +908,7 @@ background-color: none;
 }</string>
                   </property>
                   <property name="text">
-                   <string>Channel 1:</string>
+                   <string>Channel 4:</string>
                   </property>
                   <property name="alignment">
                    <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
@@ -931,43 +916,30 @@ background-color: none;
                  </widget>
                 </item>
                 <item>
-                 <widget class="QLabel" name="label_title_13">
-                  <property name="minimumSize">
-                   <size>
-                    <width>0</width>
-                    <height>0</height>
-                   </size>
-                  </property>
+                 <widget class="QLineEdit" name="note4">
                   <property name="font">
                    <font>
                     <family>Verdana</family>
                     <pointsize>14</pointsize>
-                    <bold>false</bold>
                    </font>
                   </property>
-                  <property name="styleSheet">
-                   <string notr="true">QLabel{
-color: rgb(8, 255, 206);
-background-color: none;
-}
-QLabel:hover{
-color: rgba(8, 255, 206,150);
-}
-
-
-</string>
-                  </property>
-                  <property name="text">
-                   <string>Note:</string>
-                  </property>
-                  <property name="scaledContents">
+                  <property name="autoFillBackground">
                    <bool>false</bool>
                   </property>
-                  <property name="alignment">
-                   <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+                  <property name="styleSheet">
+                   <string notr="true">QLineEdit{
+color: rgb(8, 255, 206);
+background-color: rgba(255, 255, 255, 0);
+}
+QLineEdit:hover{
+color: rgba(8, 255, 206,150);
+}</string>
                   </property>
-                  <property name="textInteractionFlags">
-                   <set>Qt::LinksAccessibleByMouse|Qt::TextEditable|Qt::TextSelectableByMouse</set>
+                  <property name="inputMask">
+                   <string/>
+                  </property>
+                  <property name="text">
+                   <string>Note 4:</string>
                   </property>
                  </widget>
                 </item>
@@ -1010,7 +982,7 @@ QCheckBox::indicator:unchecked{
            </widget>
           </item>
           <item>
-           <widget class="QFrame" name="frame_10">
+           <widget class="QFrame" name="frame_credit">
             <property name="maximumSize">
              <size>
               <width>16777215</width>
@@ -1056,10 +1028,10 @@ QCheckBox::indicator:unchecked{
                 </font>
                </property>
                <property name="styleSheet">
-                <string notr="true"/>
+                <string notr="true">color: rgba(7, 0, 86, 120);</string>
                </property>
                <property name="text">
-                <string>#tht5hc  </string>
+                <string>#v21.01  #tht5hc  </string>
                </property>
                <property name="alignment">
                 <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
