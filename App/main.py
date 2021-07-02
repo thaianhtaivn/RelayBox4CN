@@ -17,12 +17,13 @@ class MainWindow(QMainWindow):
         QMainWindow.__init__(self)
         self.ui = Ui_MainWindow()
         self.ui.setupUi(self)
+
+        
         self.port = 'COM9'
         self.readSetting()
          ## REMOVE TITLE BAR
         self.setWindowFlag(Qt.FramelessWindowHint)
         self.setAttribute(Qt.WA_TranslucentBackground)
-        
 
         self.show()
         self.timer = QTimer()
@@ -48,10 +49,10 @@ class MainWindow(QMainWindow):
             pass
 
         # RELAY FUNCTION
-        self.ui.relay1.stateChanged.connect(lambda: self.turn_on(1 if self.ui.relay1.isChecked() else 0))
-        self.ui.relay2.stateChanged.connect(lambda: self.turn_on(2 if self.ui.relay2.isChecked() else 0))
-        self.ui.relay3.stateChanged.connect(lambda: self.turn_on(3 if self.ui.relay3.isChecked() else 0))
-        self.ui.relay4.stateChanged.connect(lambda: self.turn_on(4 if self.ui.relay4.isChecked() else 0))
+        self.ui.relay1.stateChanged.connect(lambda: self.turn_on(1, 1 if self.ui.relay1.isChecked() else 0))
+        self.ui.relay2.stateChanged.connect(lambda: self.turn_on(2, 2 if self.ui.relay2.isChecked() else 0))
+        self.ui.relay3.stateChanged.connect(lambda: self.turn_on(3, 3 if self.ui.relay3.isChecked() else 0))
+        self.ui.relay4.stateChanged.connect(lambda: self.turn_on(4, 4 if self.ui.relay4.isChecked() else 0))
 
         #SAVE NOTES
         self.ui.note1.mousePressEvent = self.Changed
@@ -71,20 +72,28 @@ class MainWindow(QMainWindow):
             self.dragPos = event.globalPos()
             event.accept()
     
-    def turn_on(self, channel):
-        print('RELAY: %s'%channel)
+    def turn_on(self, channel, status):
+        # print('RELAY: %s'%channel)
+        command=''
+        if status:
+            command = 'VSET%sOUTon\n'%channel
+        else:
+            command ='VSET%sOUToff\n'%channel
         try: 
             com = Relay_Serial(self.port)
             com.open()
-            com.send('VSET%s\n'%channel)
+            com.send(command)
         except Exception as e:
             print(e)
             pass
 
     def close(self) -> bool:
-        com = Relay_Serial(self.port)
-        com.open()
-        com.send('VOFF\n')
+        try:
+            com = Relay_Serial(self.port)
+            com.open()
+            com.send('VSETAOUToff\n')
+        except Exception:
+            pass
         return super().close()
 
     def showDiaglog(self):
