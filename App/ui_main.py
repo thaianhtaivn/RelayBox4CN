@@ -58,7 +58,7 @@ class Ui_MainWindow(object):
         self.label_logo = QtWidgets.QLabel(self.title_bar)
         self.label_logo.setMaximumSize(QtCore.QSize(60, 16777215))
         self.label_logo.setLayoutDirection(QtCore.Qt.LeftToRight)
-        self.label_logo.setStyleSheet("image: url(\"icon.png\");")
+        self.label_logo.setStyleSheet("image: url(\"images/icon.png\");")
         self.label_logo.setFrameShape(QtWidgets.QFrame.NoFrame)
         self.label_logo.setText("")
         self.label_logo.setAlignment(QtCore.Qt.AlignLeading|QtCore.Qt.AlignLeft|QtCore.Qt.AlignTop)
@@ -116,7 +116,7 @@ class Ui_MainWindow(object):
 "}\n"
 "\n"
 "")
-        self.label_time.setAlignment(QtCore.Qt.AlignLeft)
+        self.label_time.setAlignment(QtCore.Qt.AlignCenter)
         self.label_time.setObjectName("label_time")
         self.verticalLayout_8.addWidget(self.label_time)
         self.horizontalLayout_7.addWidget(self.frame_intro)
@@ -141,7 +141,7 @@ class Ui_MainWindow(object):
         self.settingsTopBtn.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
         self.settingsTopBtn.setText("")
         icon = QtGui.QIcon()
-        icon.addPixmap(QtGui.QPixmap("icon_settings.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        icon.addPixmap(QtGui.QPixmap("images/icon_settings.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
         self.settingsTopBtn.setIcon(icon)
         self.settingsTopBtn.setIconSize(QtCore.QSize(20, 20))
         self.settingsTopBtn.setObjectName("settingsTopBtn")
@@ -152,7 +152,7 @@ class Ui_MainWindow(object):
         self.minimizeAppBtn.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
         self.minimizeAppBtn.setText("")
         icon1 = QtGui.QIcon()
-        icon1.addPixmap(QtGui.QPixmap("icon_minimize.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        icon1.addPixmap(QtGui.QPixmap("images/icon_minimize.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
         self.minimizeAppBtn.setIcon(icon1)
         self.minimizeAppBtn.setIconSize(QtCore.QSize(20, 20))
         self.minimizeAppBtn.setObjectName("minimizeAppBtn")
@@ -163,7 +163,7 @@ class Ui_MainWindow(object):
         self.closeAppBtn.setCursor(QtGui.QCursor(QtCore.Qt.PointingHandCursor))
         self.closeAppBtn.setText("")
         icon2 = QtGui.QIcon()
-        icon2.addPixmap(QtGui.QPixmap("icon_close.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        icon2.addPixmap(QtGui.QPixmap("images/icon_close.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
         self.closeAppBtn.setIcon(icon2)
         self.closeAppBtn.setIconSize(QtCore.QSize(20, 20))
         self.closeAppBtn.setObjectName("closeAppBtn")
@@ -230,20 +230,10 @@ class Ui_MainWindow(object):
         self.relay1 = QtWidgets.QCheckBox(self.frame_CN1)
         self.relay1.setMaximumSize(QtCore.QSize(120, 50))
         self.relay1.setLayoutDirection(QtCore.Qt.RightToLeft)
-        self.relay1.setStyleSheet("QCheckBox{\n"
-"background-color: none;\n"
-"}\n"
-"QCheckBox::indicator{\n"
-"    width: 100px;\n"
-"    height: 100px;\n"
-"}\n"
-"\n"
-"QCheckBox::indicator:checked{\n"
-"    image: url(\"on.png\");\n"
-"}\n"
-"QCheckBox::indicator:unchecked{\n"
-"    image: url(\"off.png\");\n"
-"}")
+        self.relay1.setStyleSheet("QCheckBox {background-color: none;}\n"
+"QCheckBox::indicator {width: 100px; height: 100px;}\n"
+"QCheckBox::indicator:checked {image: url(\"images/on.png\");}\n"
+"QCheckBox::indicator:unchecked {image: url(\"images/off.png\");}")
         self.relay1.setText("")
         self.relay1.setObjectName("relay1")
         self.horizontalLayout_2.addWidget(self.relay1)
@@ -300,20 +290,10 @@ class Ui_MainWindow(object):
         self.relay2 = QtWidgets.QCheckBox(self.frame_CN2)
         self.relay2.setMaximumSize(QtCore.QSize(120, 50))
         self.relay2.setLayoutDirection(QtCore.Qt.RightToLeft)
-        self.relay2.setStyleSheet("QCheckBox{\n"
-"background-color: none;\n"
-"}\n"
-"QCheckBox::indicator{\n"
-"    width: 100px;\n"
-"    height: 100px;\n"
-"}\n"
-"\n"
-"QCheckBox::indicator:checked{\n"
-"    image: url(\"on.png\");\n"
-"}\n"
-"QCheckBox::indicator:unchecked{\n"
-"    image: url(\"off.png\");\n"
-"}")
+        self.relay2.setStyleSheet("QCheckBox {background-color: none;}\n"
+"QCheckBox::indicator {width: 100px; height: 100px;}\n"
+"QCheckBox::indicator:checked {image: url(\"images/on.png\");}\n"
+"QCheckBox::indicator:unchecked {image: url(\"images/off.png\");}")
         self.relay2.setText("")
         self.relay2.setObjectName("relay2")
         self.horizontalLayout_10.addWidget(self.relay2)
@@ -370,20 +350,10 @@ class Ui_MainWindow(object):
         self.relay3 = QtWidgets.QCheckBox(self.frame_CN3)
         self.relay3.setMaximumSize(QtCore.QSize(120, 50))
         self.relay3.setLayoutDirection(QtCore.Qt.RightToLeft)
-        self.relay3.setStyleSheet("QCheckBox{\n"
-"background-color: none;\n"
-"}\n"
-"QCheckBox::indicator{\n"
-"    width: 100px;\n"
-"    height: 100px;\n"
-"}\n"
-"\n"
-"QCheckBox::indicator:checked{\n"
-"    image: url(\"on.png\");\n"
-"}\n"
-"QCheckBox::indicator:unchecked{\n"
-"    image: url(\"off.png\");\n"
-"}")
+        self.relay3.setStyleSheet("QCheckBox {background-color: none;}\n"
+"QCheckBox::indicator {width: 100px; height: 100px;}\n"
+"QCheckBox::indicator:checked {image: url(\"images/on.png\");}\n"
+"QCheckBox::indicator:unchecked {image: url(\"images/off.png\");}")
         self.relay3.setText("")
         self.relay3.setObjectName("relay3")
         self.horizontalLayout_12.addWidget(self.relay3)
@@ -441,20 +411,10 @@ class Ui_MainWindow(object):
         self.relay4 = QtWidgets.QCheckBox(self.frame_CN4)
         self.relay4.setMaximumSize(QtCore.QSize(120, 50))
         self.relay4.setLayoutDirection(QtCore.Qt.RightToLeft)
-        self.relay4.setStyleSheet("QCheckBox{\n"
-"background-color: none;\n"
-"}\n"
-"QCheckBox::indicator{\n"
-"    width: 100px;\n"
-"    height: 100px;\n"
-"}\n"
-"\n"
-"QCheckBox::indicator:checked{\n"
-"    image: url(\"on.png\");\n"
-"}\n"
-"QCheckBox::indicator:unchecked{\n"
-"    image: url(\"off.png\");\n"
-"}")
+        self.relay4.setStyleSheet("QCheckBox {background-color: none;}\n"
+"QCheckBox::indicator {width: 100px; height: 100px;}\n"
+"QCheckBox::indicator:checked {image: url(\"images/on.png\");}\n"
+"QCheckBox::indicator:unchecked {image: url(\"images/off.png\");}")
         self.relay4.setText("")
         self.relay4.setObjectName("relay4")
         self.horizontalLayout_11.addWidget(self.relay4)

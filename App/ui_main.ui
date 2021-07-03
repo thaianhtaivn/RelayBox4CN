@@ -130,7 +130,7 @@ border-radius:7px;</string>
              <enum>Qt::LeftToRight</enum>
             </property>
             <property name="styleSheet">
-             <string notr="true">image: url(&quot;icon.png&quot;);</string>
+             <string notr="true">image: url(&quot;images/icon.png&quot;);</string>
             </property>
             <property name="frameShape">
              <enum>QFrame::NoFrame</enum>
@@ -342,7 +342,7 @@ color: rgba(8, 255, 206,150);
                   </property>
                   <property name="icon">
                    <iconset>
-                    <normaloff>icon_settings.png</normaloff>icon_settings.png</iconset>
+                    <normaloff>images/icon_settings.png</normaloff>images/icon_settings.png</iconset>
                   </property>
                   <property name="iconSize">
                    <size>
@@ -377,7 +377,7 @@ color: rgba(8, 255, 206,150);
                   </property>
                   <property name="icon">
                    <iconset>
-                    <normaloff>icon_minimize.png</normaloff>icon_minimize.png</iconset>
+                    <normaloff>images/icon_minimize.png</normaloff>images/icon_minimize.png</iconset>
                   </property>
                   <property name="iconSize">
                    <size>
@@ -412,7 +412,7 @@ color: rgba(8, 255, 206,150);
                   </property>
                   <property name="icon">
                    <iconset>
-                    <normaloff>icon_close.png</normaloff>icon_close.png</iconset>
+                    <normaloff>images/icon_close.png</normaloff>images/icon_close.png</iconset>
                   </property>
                   <property name="iconSize">
                    <size>
@@ -569,20 +569,10 @@ color: rgba(8, 255, 206,150);
                 <enum>Qt::RightToLeft</enum>
                </property>
                <property name="styleSheet">
-                <string notr="true">QCheckBox{
-background-color: none;
-}
-QCheckBox::indicator{
-	width: 100px;
-	height: 100px;
-}
-
-QCheckBox::indicator:checked{
-	image: url(&quot;on.png&quot;);
-}
-QCheckBox::indicator:unchecked{
-	image: url(&quot;off.png&quot;);
-}</string>
+                <string notr="true">QCheckBox {background-color: none;}
+QCheckBox::indicator {width: 100px; height: 100px;}
+QCheckBox::indicator:checked {image: url(&quot;images/on.png&quot;);}
+QCheckBox::indicator:unchecked {image: url(&quot;images/off.png&quot;);}</string>
                </property>
                <property name="text">
                 <string/>
@@ -718,20 +708,10 @@ color: rgba(8, 255, 206,150);
                 <enum>Qt::RightToLeft</enum>
                </property>
                <property name="styleSheet">
-                <string notr="true">QCheckBox{
-background-color: none;
-}
-QCheckBox::indicator{
-	width: 100px;
-	height: 100px;
-}
-
-QCheckBox::indicator:checked{
-	image: url(&quot;on.png&quot;);
-}
-QCheckBox::indicator:unchecked{
-	image: url(&quot;off.png&quot;);
-}</string>
+                <string notr="true">QCheckBox {background-color: none;}
+QCheckBox::indicator {width: 100px; height: 100px;}
+QCheckBox::indicator:checked {image: url(&quot;images/on.png&quot;);}
+QCheckBox::indicator:unchecked {image: url(&quot;images/off.png&quot;);}</string>
                </property>
                <property name="text">
                 <string/>
@@ -867,20 +847,10 @@ color: rgba(8, 255, 206,150);
                 <enum>Qt::RightToLeft</enum>
                </property>
                <property name="styleSheet">
-                <string notr="true">QCheckBox{
-background-color: none;
-}
-QCheckBox::indicator{
-	width: 100px;
-	height: 100px;
-}
-
-QCheckBox::indicator:checked{
-	image: url(&quot;on.png&quot;);
-}
-QCheckBox::indicator:unchecked{
-	image: url(&quot;off.png&quot;);
-}</string>
+                <string notr="true">QCheckBox {background-color: none;}
+QCheckBox::indicator {width: 100px; height: 100px;}
+QCheckBox::indicator:checked {image: url(&quot;images/on.png&quot;);}
+QCheckBox::indicator:unchecked {image: url(&quot;images/off.png&quot;);}</string>
                </property>
                <property name="text">
                 <string/>
@@ -1017,20 +987,10 @@ color: rgba(8, 255, 206,150);
                 <enum>Qt::RightToLeft</enum>
                </property>
                <property name="styleSheet">
-                <string notr="true">QCheckBox{
-background-color: none;
-}
-QCheckBox::indicator{
-	width: 100px;
-	height: 100px;
-}
-
-QCheckBox::indicator:checked{
-	image: url(&quot;on.png&quot;);
-}
-QCheckBox::indicator:unchecked{
-	image: url(&quot;off.png&quot;);
-}</string>
+                <string notr="true">QCheckBox {background-color: none;}
+QCheckBox::indicator {width: 100px; height: 100px;}
+QCheckBox::indicator:checked {image: url(&quot;images/on.png&quot;);}
+QCheckBox::indicator:unchecked {image: url(&quot;images/off.png&quot;);}</string>
                </property>
                <property name="text">
                 <string/>

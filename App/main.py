@@ -43,7 +43,7 @@ class MainWindow(QMainWindow):
         try:
             com = Relay_Serial(self.port)
             com.open()
-            com.send('VOFF\n')
+            com.send('VSETAOUToff\n')
         except Exception as e:
             print(e)
             pass
@@ -112,7 +112,7 @@ class MainWindow(QMainWindow):
     
     def readSetting(self):
         config = configparser.ConfigParser()
-        settings_file = os.path.dirname(os.path.realpath(__file__))+ os.sep + "AppSettings.ini"
+        settings_file = "AppSettings.ini"
         if not os.path.exists(settings_file) or os.stat(settings_file).st_size == 0:
            with open('AppSettings.ini', 'w') as configfile:
                config['DATE'] = {'Init Date':'%s'%datetime.datetime.now()}               
