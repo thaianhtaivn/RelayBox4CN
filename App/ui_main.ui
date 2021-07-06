@@ -156,7 +156,7 @@ border-radius:7px;</string>
             </property>
             <layout class="QHBoxLayout" name="horizontalLayout_7">
              <property name="spacing">
-              <number>9</number>
+              <number>0</number>
              </property>
              <property name="leftMargin">
               <number>0</number>
@@ -189,7 +189,7 @@ border-radius:7px;</string>
                  <number>0</number>
                 </property>
                 <property name="topMargin">
-                 <number>9</number>
+                 <number>5</number>
                 </property>
                 <property name="rightMargin">
                  <number>0</number>
