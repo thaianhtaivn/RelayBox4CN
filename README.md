@@ -6,20 +6,20 @@
 
 ### Hardware
 
-| Name                       | Note                                                                                         |
-| -------------------------- | -------------------------------------------------------------------------------------------- |
-| USB to UART Bridge: CP2102 | Driver: https://www.silabs.com/documents/public/software/CP210x_Universal_Windows_Driver.zip |
-| Microcontroller            | ---                                                                                          |
-| Opto PC817                 | ---                                                                                          |
-| Transitor N channel        | ---                                                                                          |
-| Relay 5VDC 10A SPDT        | ---                                                                                          |
+| Name                         | Note                                                                                         |
+| ---------------------------- | -------------------------------------------------------------------------------------------- |
+| USB to UART Bridge: CP2102   | Driver: https://www.silabs.com/documents/public/software/CP210x_Universal_Windows_Driver.zip |
+| Microcontroller STM8S003F3P6 | https://www.thegioiic.com/stm8s003f3p6                                                       |
+| Opto PC817                   | https://www.thegioiic.com/pc817c-optoisolator-transistor-output-5000vrms-1-channel-4-dip     |
+| Transitor NPN channel        | https://www.thegioiic.com/mmbt2222a-transistor-npn-40v-0-6a-3-chan-sot-23                    |
+| Relay 5VDC 10A SPDT          | https://www.thegioiic.com/jq1p-5v-f-ro-le-5vdc-10a-spdt                                      |
 
 ### Picture
 
 ![Relay Box in Lab](/relay-box.png)
 <br>
-![Relay Box in Lab](/relay-pcb.png)
+![Relay-PCB](/relay-pcb.png)
 <br>
-![Relay Box in Lab](/relay-pcb-design.png)
+![Relay-PCB-Design](/relay-pcb-design.png)
 <br>
-![Relay Box in Lab](/relay-pcb-python-GUI.png)
+![Relay-Python-GUI](/relay-pcb-python-GUI.png)
