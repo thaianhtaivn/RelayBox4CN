@@ -1,7 +1,7 @@
 // Relay Box 4 channel
 // @THT5HC
 byte pinout[] = {6,7,8,9};
-uint8_t i = 0, mode =0;
+uint8_t i = 0, cmd =0;
 char line[15];
 char *command[] = {"VSET1OUTon", "VSET1OUToff", "VSET2OUTon", "VSET2OUToff", "VSET3OUTon","VSET3OUToff", "VSET4OUTon","VSET4OUToff", "VSETAOUTon","VSETAOUToff"};
 // Func read serial, return length of string
@@ -36,18 +36,18 @@ void setup() {
 //  Serial_println_s("RELAY BOX 4 CHANNEL");
 }
 void loop() {
-  mode = 99;
+  cmd = 99;
   if (read_line(line, sizeof(line)) < 0) {
     Serial_println_s("Error: Command too long");
     return; // skip command processing and try again on next iteration of loop
   }
   for(i=0; i<sizeof(command); i++){
     if (strcmp(line, command[i])==0){
-      mode = i;
+      cmd = i;
       break;
     }
    }
-  switch (mode){
+  switch (cmd){
     case 0: digitalWrite(pinout[0], HIGH); break;
     case 1: digitalWrite(pinout[0], LOW); break;
     case 2: digitalWrite(pinout[1], HIGH); break;
@@ -59,5 +59,4 @@ void loop() {
     case 8: for(i=0; i<4;i++) digitalWrite(pinout[i], HIGH); break;
     case 9: for(i=0; i<4;i++) digitalWrite(pinout[i], LOW); break;    
   }
-
 }
